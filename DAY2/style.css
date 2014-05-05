@@ -1,0 +1,80 @@
+body{
+  background: #d9ffff;
+  padding-top: 250px;
+
+}
+
+
+.ring1 {
+
+height: 120px;
+width: 120px;
+border: 15px dashed red;
+display: block;
+border-radius: 100000px;
+margin: 0;
+background: white;
+float: left;
+}
+
+.container {
+  width: 540px;
+  margin: 0 auto;
+}
+
+.ring2 {
+
+height: 200px;
+width: 200px;
+border: 15px dashed red;
+display: block;
+border-radius: 100000px;
+margin: 0;
+background: white;
+float: left;
+}
+
+@-webkit-keyframes ring1 {
+    0% { -webkit-transform: rotate(1deg); }
+    100% { -webkit-transform: rotate(360deg); }
+   }
+
+
+@-webkit-keyframes ring2 {
+    0% { -webkit-transform: rotate(360deg); }
+    100% { -webkit-transform: rotate(1deg); }
+   }
+
+
+
+/* This is the element that we apply the animation to. */
+.ring1 {
+   -webkit-animation-name: ring1;
+   -webkit-animation-duration: 1.4s;
+   -webkit-animation-timing-function: ease; /* ease is the default */
+   -webkit-animation-delay: 0s;             /* 0 is the default */
+   -webkit-animation-iteration-count: 2;    /* 1 is the default */
+   -webkit-animation-direction: alternate;  /* normal is the default */
+   -webkit-animation-iteration-count: infinite;
+}
+
+
+
+/* This is the element that we apply the animation to. */
+.ring2 {
+   -webkit-animation-name: ring2;
+   -webkit-animation-duration: 1.4s;
+   -webkit-animation-timing-function: ease; /* ease is the default */
+   -webkit-animation-delay: 0s;             /* 0 is the default */
+   -webkit-animation-iteration-count: 2;    /* 1 is the default */
+   -webkit-animation-direction: alternate;  /* normal is the default */
+   -webkit-animation-iteration-count: infinite;
+}
+
+
+
+
+
+
+
+
