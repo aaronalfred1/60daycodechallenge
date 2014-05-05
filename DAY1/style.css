@@ -1,0 +1,157 @@
+body{
+  text-align: center;
+  margin: 400px 0 0 0;
+  background: #d9ffff;
+
+}
+
+
+.ring1 {
+
+height: 120px;
+width: 120px;
+border: 15px solid red;
+display: block;
+opacity: 0%;
+border-radius: 100000px;
+margin: 0px auto 0 auto;
+position: absolute;
+left: 51.155%;
+background: white;
+z-index: 100000;`
+
+}
+
+.ring2 {
+background: white;
+
+height: 200px;
+width: 200px;
+border: 25px solid red;
+display: block;
+border-radius: 100000px;
+margin: 0 auto;
+position: absolute;
+left: 50%;
+z-index: 3;
+
+}
+
+.ring3 {
+background: white;
+
+height: 300px;
+width: 300px;
+border: 30px solid red;
+display: block;
+border-radius: 100000px;
+margin: 0 auto;
+position: absolute;
+left: 48.6%;
+z-index: 2;
+
+}
+
+.ring4 {
+background: white;
+
+height: 400px;
+width: 400px;
+border: 30px solid red;
+display: block;
+border-radius: 100000px;
+margin: 0 auto;
+position: absolute;
+left: 47.25%;
+z-index: 1;
+
+}
+
+
+
+
+
+@-webkit-keyframes ring1 {
+    0% { -webkit-transform: scale(1); }
+    100% { -webkit-transform: scale(0.5); }
+   }
+
+@-webkit-keyframes ring2 {
+    0% { -webkit-transform: scale(1); }
+    100% { -webkit-transform: scale(0.6); }
+   }
+
+@-webkit-keyframes ring3 {
+    0% { -webkit-transform: scale(1); }
+    100% { -webkit-transform: scale(0.7); }
+   }
+@-webkit-keyframes ring4 {
+    0% { -webkit-transform: scale(1); }
+    100% { -webkit-transform: scale(0.8); }
+   }
+
+
+/* This is the element that we apply the animation to. */
+.ring1 {
+   -webkit-animation-name: ring1;
+   -webkit-animation-duration: 1s;
+   -webkit-animation-timing-function: ease; /* ease is the default */
+   -webkit-animation-delay: 0s;             /* 0 is the default */
+   -webkit-animation-iteration-count: 2;    /* 1 is the default */
+   -webkit-animation-direction: alternate;  /* normal is the default */
+   -webkit-animation-iteration-count: infinite;
+}
+
+/* This is the element that we apply the animation to. */
+.ring2 {
+   -webkit-animation-name: ring2;
+   -webkit-animation-duration: 1s;
+   -webkit-animation-timing-function: ease; /* ease is the default */
+   -webkit-animation-delay: 0s;             /* 0 is the default */
+   -webkit-animation-iteration-count: 2;    /* 1 is the default */
+   -webkit-animation-direction: alternate;  /* normal is the default */
+   -webkit-animation-iteration-count: infinite;
+}
+
+/* This is the element that we apply the animation to. */
+.ring3 {
+   -webkit-animation-name: ring3;
+   -webkit-animation-duration: 1s;
+   -webkit-animation-timing-function: ease; /* ease is the default */
+   -webkit-animation-delay: 0s;             /* 0 is the default */
+   -webkit-animation-iteration-count: 2;    /* 1 is the default */
+   -webkit-animation-direction: alternate;  /* normal is the default */
+   -webkit-animation-iteration-count: infinite;
+}
+
+
+
+/* This is the element that we apply the animation to. */
+.ring4 {
+   -webkit-animation-name: ring4;
+   -webkit-animation-duration: 1s;
+   -webkit-animation-timing-function: ease; /* ease is the default */
+   -webkit-animation-delay: 0s;             /* 0 is the default */
+   -webkit-animation-iteration-count: 2;    /* 1 is the default */
+   -webkit-animation-direction: alternate;  /* normal is the default */
+   -webkit-animation-iteration-count: infinite;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
