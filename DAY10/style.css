@@ -1,0 +1,98 @@
+body{
+  background: #8CCE43;
+  margin: 0;
+  padding: 0;
+
+}
+
+h1 {
+color: white;
+font-family: sans-serif;
+position: relative;
+left: -44px;
+font-size: 30px;
+bottom: -280px;
+padding: 3px 17px 3px 40px;
+font-weight: 500;
+background: #b8ebFF;
+display: inline-block;
+font-style: italic;
+border-radius: 10000px;
+}
+
+  h1:after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 100px;
+    border-width: 10px 10px 0;
+    border-style: solid;
+    border-color: #b8ebFF transparent;
+    display: block;
+    width: 0;
+  }
+
+
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  background: #D3F3FF;
+  border: 1px solid #d9d9d9;
+  position: relative;
+  text-align: center;
+}
+
+.roll {
+  width: 100px;
+  margin: 0 auto;
+  background: #4268F8;
+  position: relative;
+  border-radius: 10000px;
+  bottom: -280px;
+}
+
+
+
+
+
+/* This is the element that we apply the animation to. */
+.roll {
+    -webkit-animation-name: roll;
+    -webkit-animation-duration: 0.1s;
+    -webkit-animation-iteration-count: infinite;    /* 1 is the default */
+    -webkit-animation-timing-function: steps(10000, end); /* ease is the default */
+    background-image: linear-gradient(-179deg, #4268F8 0%, #2D33BE 100%);
+}
+
+@-webkit-keyframes roll {
+  0% {
+    -webkit-transform:rotate(1deg);
+    height: 100px;
+  }
+
+    100% {    
+      -webkit-transform:rotate(360deg);
+      height: 95px;
+  }
+}
+
+
+.container {
+    -webkit-animation-name: container;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;    /* 1 is the default */
+    -webkit-animation-timing-function: ease; /* ease is the default */
+    -webkit-animation-direction:alternate;
+}
+
+@-webkit-keyframes container {
+    0% {
+      height: 450px;
+    }
+
+    100% {
+      height: 500px;
+    }
+}
+

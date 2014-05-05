@@ -1,0 +1,120 @@
+body{
+  background: #d9ffff;
+  padding-top: 250px;
+
+}
+.container {
+  height: 240px;
+  width: 240px;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  border-radius: 10000px;
+  background-color: #fff;
+}
+
+.sec {
+
+height: 2px;
+width: 80px;
+display: block;
+margin: 0;
+background: red;
+position: relative;
+left: 49%;
+top: 49%;
+-webkit-transform-origin: 5px 100%;
+
+}
+
+.min {
+
+height: 3px;
+width: 100px;
+display: block;
+margin: 0;
+background: blue;
+position: relative;
+left: 49%;
+top: 49%;
+-webkit-transform-origin: 5px 100%;
+
+}
+
+.hour {
+
+height: 6px;
+width: 100px;
+display: block;
+margin: 0;
+background: black;
+position: relative;
+left: 49%;
+top: 49%;
+-webkit-transform-origin: 5px 100%;
+
+}
+
+
+@-webkit-keyframes sec {
+    0% { 
+      -webkit-transform: rotate(270deg);
+     }
+    100% { -webkit-transform: rotate(620deg); }
+   }
+
+@-webkit-keyframes min {
+    0% { 
+      -webkit-transform: rotate(270deg);
+     }
+    100% { -webkit-transform: rotate(620deg); }
+   }
+
+@-webkit-keyframes hour {
+    0% { 
+      -webkit-transform: rotate(270deg);
+     }
+    100% { -webkit-transform: rotate(620deg); }
+   }
+
+
+
+/* This is the element that we apply the animation to. */
+.sec {
+   -webkit-animation-name: sec;
+   -webkit-animation-duration: 60s;
+   -webkit-animation-timing-function: steps(60, end); /* ease is the default */
+   -webkit-animation-delay: 0s;             /* 0 is the default */
+   -webkit-animation-iteration-count: infinite;    /* 1 is the default */
+   -webkit-animation-direction: normal;  /* normal is the default */
+   -webkit-animation-iteration-count: infinite;
+   -webkit-animation-play-state: running;
+}
+
+.min {
+   -webkit-animation-name: min;
+   -webkit-animation-duration: 3600s;
+   -webkit-animation-timing-function: steps(60, end); /* ease is the default */
+   -webkit-animation-delay: 0s;             /* 0 is the default */
+   -webkit-animation-iteration-count: infinite;    /* 1 is the default */
+   -webkit-animation-direction: normal;  /* normal is the default */
+   -webkit-animation-iteration-count: infinite;
+   -webkit-animation-play-state: running;
+}
+
+.hour {
+   -webkit-animation-name: hour;
+   -webkit-animation-duration: 43200s;
+   -webkit-animation-timing-function: steps(60, end); /* ease is the default */
+   -webkit-animation-delay: 0s;             /* 0 is the default */
+   -webkit-animation-iteration-count: infinite;    /* 1 is the default */
+   -webkit-animation-direction: normal;  /* normal is the default */
+   -webkit-animation-iteration-count: infinite;
+   -webkit-animation-play-state: running;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,61 @@
+body{
+  background: #ffffff;
+  margin: 0;
+  padding: 350px 0 0 0 ;
+
+}
+
+.container {
+  width: 350px;
+  height: 350px;
+  margin: 0 auto;
+}
+
+.roll {
+  height: 105px;
+  width: 335px;
+  border-radius: 100000px;
+  margin: 0 auto;
+  position: absolute;
+  border: 5px solid #ffffcf;
+
+}
+
+.donuthole {
+  height: 130px;
+  width: 130px;
+  border-radius: 100000px;
+  margin: 0 auto;
+  position: absolute;
+  top: 32.25%;
+  left: 44.25%;
+  background: #ffffe1;
+  z-index: 1;
+  border: 10px solid #ffffbf;
+
+}
+
+
+
+
+
+/* This is the element that we apply the animation to. */
+.roll {
+   -webkit-animation-name: roll;
+   -webkit-animation-duration: 2s;
+   -webkit-animation-iteration-count: infinite;    /* 1 is the default */
+   -webkit-animation-timing-function: steps(10000, end); /* ease is the default */
+}
+
+
+@-webkit-keyframes roll {
+    0% { -webkit-transform: rotate(1deg);
+        background-image: linear-gradient(-179deg, #FAD961 0%, #F76B1C 100%);
+    }
+    100% { -webkit-transform: rotate(360deg);
+        background-image: linear-gradient(-179deg, #F76B1C 0%, #FAD961 100%);
+    }
+}
+
+
+

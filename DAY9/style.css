@@ -1,0 +1,50 @@
+body{
+  background: #ffffff;
+  margin: 0;
+  padding: 150px 0 0 0 ;
+
+}
+
+.container {
+  width: 350px;
+  height: 350px;
+  margin: 0 auto;
+}
+
+.roll {
+    margin: 0 auto;
+}
+
+
+
+
+
+/* This is the element that we apply the animation to. */
+.roll {
+    -webkit-animation-name: roll;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;    /* 1 is the default */
+    -webkit-animation-timing-function: steps(10000, end); /* ease is the default */
+    -webkit-animation-direction:alternate; 
+}
+
+
+@-webkit-keyframes roll {
+    0% {
+      height: 335px;
+      width: 335px;
+      background: pink;
+    }
+
+    100% {
+      height: 335px;
+      width: 335px;
+      background: red;
+      border-radius: 175px;
+
+    }
+
+}
+
+
+
