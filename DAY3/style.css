@@ -1,0 +1,51 @@
+body{
+  background: red;
+  padding-top: 100px;
+
+}
+
+
+.ring1 {
+
+height: 100px;
+width: 100px;
+border: 150px solid red;
+display: block;
+border-radius: 100000px;
+margin: 0;
+background: white;
+float: left;
+}
+
+.container {
+  width: 540px;
+  margin: 0 auto;
+}
+
+
+
+@-webkit-keyframes ring1 {
+    0% { -webkit-transform: scale(300);}
+    100% { -webkit-transform: scale(1);}
+   }
+
+
+
+
+
+/* This is the element that we apply the animation to. */
+.ring1 {
+   -webkit-animation-name: ring1;
+   -webkit-animation-duration: 2s;
+   -webkit-animation-timing-function: ease; /* ease is the default */
+   -webkit-animation-delay: 0s;             /* 0 is the default */
+   -webkit-animation-iteration-count: 2;    /* 1 is the default */
+   -webkit-animation-direction: alternate;  /* normal is the default */
+   -webkit-animation-iteration-count: 1;
+}
+
+
+
+
+
+

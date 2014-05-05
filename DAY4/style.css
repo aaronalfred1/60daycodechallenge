@@ -1,0 +1,59 @@
+body{
+  background: white;
+  padding-top: 100px;
+
+}
+
+
+.ring1 {
+
+height: 100px;
+width: 100px;
+border: 5px solid red;
+display: block;
+border-radius: 100000px;
+margin: 0 auto 30px auto;
+background: white;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+
+@-webkit-keyframes ring1 {
+    0% { background: red;}
+    10% { background: brown;}
+    20% { background: red;}
+    30% { background: brown;}
+    40% { background: red;}
+    50% { background: brown;}
+    60% { background: red;}
+    70% { background: brown;}
+    80% { background: red;}
+    90% { background: brown;}
+    100% { background: red; width:90%;}
+   }
+
+
+
+
+
+/* This is the element that we apply the animation to. */
+.ring1 {
+   -webkit-animation-name: ring1;
+   -webkit-animation-duration: 1.5s;
+   -webkit-animation-timing-function: ease; /* ease is the default */
+   -webkit-animation-delay: 0s;             /* 0 is the default */
+   -webkit-animation-iteration-count: 2;    /* 1 is the default */
+   -webkit-animation-direction: alternate;  /* normal is the default */
+   -webkit-animation-iteration-count: infinite;
+}
+
+
+
+
+
+
